@@ -1,0 +1,43 @@
+package com.learn;
+
+public class Shape {
+    void area(){System.out.println("Area of shapes");}
+}
+
+
+class Rectangle extends Shape{
+    double length;
+    double height;
+    void area(){System.out.println("Area of rectangle" + length*height);}
+    Rectangle(){
+        Rectangle r = new Rectangle();
+        r. length = 2.5;
+        r. height= 3.5;
+        r.area();
+
+    }
+}
+class Square extends Shape {
+    double side;
+    void area() {System.out.println("Area of square is" + side * side);}
+    Square(){
+        Square s = new Square();
+        s.side = 4.0;
+        s.area();
+    }
+}
+class Circle extends Shape{
+    double radius;
+    double pi = 3.14;
+    void area(){System.out.println("Area of circle is"+pi*radius*radius);}
+    Circle(){
+        Circle c = new Circle();
+        c.radius=5.6;
+        c.area();
+    }
+}
+
+
+
+
+
